@@ -29,12 +29,11 @@ def hitung_biayaTarif():
         #orang = Jumlah penumpang * 1.5 ~ Jadi setiap penumpang akan dikalikan bernilai 1.5
         #biayaTarif = (km*1000)*orang ~ Nilai 'km' akan dikalikan 1000 dimana hasil itu akan dikalikan dengan nilai 'orang'.
 #=====================================================================================================
-
-#Definisi ucapan submit terimakasih
+# Definisi pesan dari button informasi program
 def ucapan():
     n = 0
     for n in range(6):
-        print("Terimakasih dan selamat jalan!", (n))
+        print("Program [Kalkulasi Tarif Taksi] dibuat oleh Hafidz Putra Rachman - 21120120140096", (n))
     n += 1
 
 #=====================================================================================================
@@ -123,10 +122,10 @@ reset_btn = Button(frame3, text='Reset', command=reset_entry,
                    bg='#00FF00')
 reset_btn.pack(side=LEFT)
 
-# Button terimakasih (Mengucapkan terimakasih kepada siapapun user-nya)
-terimakasih_btn = Button(frame, text='Terimakasih',
+# Button Informasi Program (Melihat detail pembuat program)
+info_btn = Button(frame, text='Informasi Program',
                   command=ucapan, bg='#000000', fg='white')
-terimakasih_btn.grid(row=7, columnspan=3, pady=10)
+info_btn.grid(row=7, columnspan=3, pady=10)
 
 #=====================================================================================================
 # Frame untuk pesan paragraph dibawah
