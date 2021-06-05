@@ -47,16 +47,16 @@ Label(text="Program Kalkulasi Tarif Taksi", font="ar 16 bold").grid(row=0, colum
 def biaya_tarif(biayaTarif):
     if biayaTarif < 10000:
         messagebox.showinfo('Hasil Perhitungan',
-                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Perjalanan dekat.')
+                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Paket Kecil.')
     elif (biayaTarif > 10000) and (biayaTarif < 50000):
         messagebox.showinfo('Hasil Perhitungan',
-                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Perjalanan biasa.')
+                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Paket Sedang.')
     elif (biayaTarif > 50000) and (biayaTarif < 100000):
         messagebox.showinfo('Hasil Perhitungan',
-                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Perjalanan jauh.')
+                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Paket Besar.')
     elif (biayaTarif > 100000):
         messagebox.showinfo('Hasil Perhitungan',
-                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Perjalanan sangat jauh.')
+                            f'Biaya tarif perjalanan = Rp. {biayaTarif} Golongan Paket Sangat Besar.')
 
 #=====================================================================================================
 # Dimensi, judul dan configurasi warna background program ini
